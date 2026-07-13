@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummi Company Bakery - Pekanbaru</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/text/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR (Bootstrap Navbar Collapse) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="#" onclick="switchPage('home')">
+                <i class="bi bi-cake2-fill me-2"></i>Yummi Bakery
+            </a>
+            <button class="navbar-brand navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-home" href="#" onclick="switchPage('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-menu" href="#" onclick="switchPage('menu')">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tentang" href="#" onclick="switchPage('tentang')">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-kontak" href="#" onclick="switchPage('kontak')">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HOME (Active by default) -->
+    <section id="home" class="page-section active">
+        <!-- Jumbotron & Call to Action -->
+        <div class="p-5 mb-4 bg-light rounded-3 text-center hero-jumbotron">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold text-dark">Kelezatan Roti Premium Asli Pekanbaru</h1>
+                <p class="col-md-8 fs-4 mx-auto text-secondary">Menyajikan variasi roti manis, kue ulang tahun, donut, dan pastry higienis dengan bahan baku premium pilihan.</p>
+                <button class="btn btn-warning btn-lg fw-bold px-4 text-white" type="button" onclick="switchPage('menu')">Lihat Katalog Menu</button>
+            </div>
+        </div>
+
+        <!-- Keunggulan Bahan Premium -->
+        <div class="container my-5">
+            <h2 class="text-center fw-bold mb-4">Mengapa Memilih Kami?</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-3 border rounded shadow-sm bg-white h-100">
+                        <i class="bi bi-shield-check display-4 text-success"></i>
+                        <h4 class="mt-2 fw-semibold">100% Higienis</h4>
+                        <p class="text-muted">Proses produksi dengan standar kebersihan ketat di dapur modern kami.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border rounded shadow-sm bg-white h-100">
+                        <i class="bi bi-award-fill display-4 text-warning"></i>
+                        <h4 class="mt-2 fw-semibold">Bahan Premium</h4>
+                        <p class="text-muted">Menggunakan mentega dan tepung berkualitas tinggi untuk rasa terbaik.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border rounded shadow-sm bg-white h-100">
+                        <i class="bi bi-geo-alt-fill display-4 text-danger"></i>
+                        <h4 class="mt-2 fw-semibold">Lokasi Strategis</h4>
+                        <p class="text-muted">Mudah diakses di kawasan Jl. SM Amin, dekat dengan pemukiman kamu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: MENU (Katalog dengan Navigasi Tabs & Tooltip) -->
+    <section id="menu" class="page-section">
+        <div class="container my-5">
+            <h2 class="text-center fw-bold mb-4">Katalog Menu Tematik</h2>
+            
+            <!-- Tab Navigasi Kategori -->
+            <ul class="nav nav-tabs justify-content-center mb-4" id="menuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active fw-semibold" id="roti-tab" data-bs-toggle="tab" data-bs-target="#roti" type="button" role="tab">Roti Manis</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-semibold" id="cakes-tab" data-bs-toggle="tab" data-bs-target="#cakes" type="button" role="tab">Cakes & Tart</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-semibold" id="pastry-tab" data-bs-toggle="tab" data-bs-target="#pastry" type="button" role="tab">Pastry & Donut</button>
+                </li>
+            </ul>
+
+            <!-- Isi Konten Tab -->
+            <div class="tab-content" id="menuTabsContent">
+                <!-- Roti Manis -->
+                <div class="tab-pane fade show active" id="roti" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500" class="card-img-top" alt="Roti Cokelat">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Roti Manis Cokelat</h5>
+                                    <p class="card-text text-muted">Roti lembut dengan isian cokelat Belgia lumer melimpah.</p>
+                                    <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Mengandung: Tepung, Susu, Telur, Cokelat">Info Alergen</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=500" class="card-img-top" alt="Roti Keju">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Roti Keju Susu</h5>
+                                    <p class="card-text text-muted">Taburan keju cheddar parut melimpah berpadu krim susu manis.</p>
+                                    <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Mengandung: Keju, Susu, Gluten">Info Alergen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cakes & Tart -->
+                <div class="tab-pane fade" id="cakes" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500" class="card-img-top" alt="Black Forest">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Black Forest Klasik</h5>
+                                    <p class="card-text text-muted">Kue ulang tahun cokelat berlapis krim segar dan buah ceri hitam.</p>
+                                    <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Mengandung: Cokelat, Telur, Gula Tinggi">Info Alergen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pastry -->
+                <div class="tab-pane fade" id="pastry" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500" class="card-img-top" alt="Croissant">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Butter Croissant</h5>
+                                    <p class="card-text text-muted">Pastry renyah berlapis dengan aroma mentega Prancis yang kuat.</p>
+                                    <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Mengandung: Mentega Tinggi, Tepung Gandum">Info Alergen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: TENTANG (Profil, Alert Banner & Map) -->
+    <section id="tentang" class="page-section">
+        <div class="container my-5">
+            <h2 class="text-center fw-bold mb-4">Tentang Kami</h2>
+            
+            <!-- Alert Banner Keberhasilan & Kebersihan -->
+            <div class="alert alert-info d-flex align-items-center mb-4 shadow-sm" role="alert">
+                <i class="bi bi-info-circle-fill me-2 fs-5"></i>
+                <div>
+                    <strong>Informasi Higienitas:</strong> Seluruh area dapur produksi Yummi Company Bakery selalu disterilisasi secara berkala demi menjaga keamanan pangan pelanggan Pekanbaru.
+                </div>
+            </div>
+
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <div class="card p-4 border-0 shadow-sm bg-light">
+                        <h4 class="fw-bold text-warning">Sejarah & Filosofi</h4>
+                        <p class="text-secondary">Yummi Company Bakery merupakan unit UMKM berkembang di bidang kuliner yang berlokasi nyata di Kota Pekanbaru. Kami lahir dari kecintaan kami dalam menyajikan kehangatan roti segar setiap pagi untuk keluarga tercinta.</p>
+                        <h5 class="fw-bold mt-3">Jam Operasional:</h5>
+                        <p class="text-muted"><i class="bi bi-clock-fill text-warning me-2"></i>Setiap Hari, 07.00 - 21.00 WIB</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-2 shadow-sm">
+                        <!-- Integrasi Direct Map / Embed Google Maps Placeholder -->
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6738491599426!2d101.393475!3d0.487569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a90000000001%3A0x0!2zSmwuIFNNIEFtaW4sIExhYnVoIEJhcnUgQmFyYXQsIEtlYy4gVGFtcGFuLCBLb3RhIFBla2FuYmFydSwgUmlhdSAyODI5Mw!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="card-body p-2 text-center">
+                            <small class="text-muted"><i class="bi bi-geo-alt-fill text-danger"></i> Jl. SM Amin, Labuh Baru Barat, Kec. Tampan, Pekanbaru</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: KONTAK (Form Validation & Media Sosial) -->
+    <section id="kontak" class="page-section">
+        <div class="container my-5">
+            <h2 class="text-center fw-bold mb-4">Hubungi Kami</h2>
+            <div class="row g-4">
+                <!-- Kontak Tautan Langsung -->
+                <div class="col-md-4">
+                    <div class="card p-4 text-center h-100 shadow-sm bg-dark text-white">
+                        <h4 class="fw-bold mb-3 text-warning">Order Cepat</h4>
+                        <p>Silakan akses saluran informasi resmi kami di bawah ini untuk pemesanan cepat atau kemitraan khusus:</p>
+                        <a href="https://wa.me/6282310163852" target="_blank" class="btn btn-success w-100 mb-2 fw-semibold">
+                            <i class="bi bi-whatsapp me-2"></i>WhatsApp Official
+                        </a>
+                        <a href="https://instagram.com/yummicompany_bakery" target="_blank" class="btn btn-danger w-100 fw-semibold">
+                            <i class="bi bi-instagram me-2"></i>Instagram Kami
+                        </a>
+                    </div>
+                </div>
+                <!-- Formulir Validasi Interaktif -->
+                <div class="col-md-8">
+                    <div class="card p-4 shadow-sm bg-white">
+                        <h4 class="fw-bold mb-3">Kirim Pesan & Saran</h4>
+                        <form id="contactForm" onsubmit="validateForm(event)" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="userName" class="form-label fw-semibold">Nama Lengkap</label>
+                                <input type="text" class="form-input form-control" id="userName" required placeholder="Masukkan nama Anda">
+                                <div class="invalid-feedback">Nama lengkap wajib diisi!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="userMessage" class="form-label fw-semibold">Pesan / Pengajuan Kemitraan</label>
+                                <textarea class="form-input form-control" id="userMessage" rows="4" required placeholder="Tulis pesan Anda untuk toko kami..."></textarea>
+                                <div class="invalid-feedback">Isi pesan tidak boleh kosong!</div>
+                            </div>
+                            <!-- Button Loading State JS -->
+                            <button type="submit" id="btnSubmit" class="btn btn-warning fw-bold text-white px-4">
+                                <span id="btnText">Kirim Pesan</span>
+                                <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2026 Yummi Company Bakery Pekanbaru. All Rights Reserved.</p>
+            <p class="mb-0 small text-muted">Dibuat untuk tugas UAS Web Desain 2 - AMIK Mahaputra Riau</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle dengan Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/text/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
