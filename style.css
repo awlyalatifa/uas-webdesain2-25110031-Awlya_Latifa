@@ -1,26 +1,384 @@
-/* Aturan dasar penataan SPA */
+/* ==========================================
+   PALET WARNA PERFECT-SAGE-CHOCO:
+   - Sage Green Utama: #5c6f44 (Fokus Alami & Sehat)
+   - Accent Chocolate: #824d27 (Rasa Manis & Hangat)
+   - Deep Dark Green: #1f2a15 (Kontras Premium)
+   - Light Sage BG: #f2f6f0
+   ========================================== */
+
+:root {
+    --sage-primary: #5c6f44;
+    --sage-dark: #354226;
+    --sage-light: #f3f7f1;
+    --choco-primary: #8d542c;
+    --choco-dark: #663b1d;
+    --choco-light: #faf3ed;
+    --dark-green: #1c2613;
+    --soft-white: #fdfefe;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--soft-white);
+    color: #2b3520;
+    overflow-x: hidden;
+}
+
+/* Typography */
+.heading-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-font {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--choco-primary), var(--sage-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Penata Halaman SPA */
 .page-section {
-    display: none; /* Sembunyikan semua halaman secara default */
+    display: none;
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-section.active {
-    display: block; /* Hanya tampilkan halaman dengan class active */
+    display: block;
     opacity: 1;
 }
 
-/* Custom Hero Jumbotron Styling */
-.hero-jumbotron {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('https://images.unsplash.com/photo-1517433456452-f9633a875f6f?w=1200');
-    background-size: cover;
-    background-position: center;
-    border-radius: 0 !important;
+/* Premium Glassmorphism Navbar */
+.custom-navbar {
+    background-color: rgba(28, 38, 19, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--choco-primary);
+    padding: 15px 0;
+    transition: all 0.3s;
 }
 
-/* Penyesuaian responsivitas teks */
-@media (max-width: 576px) {
-    .display-5 {
-        font-size: 2.2rem;
+.brand-sub {
+    color: var(--choco-light);
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.brand-icon {
+    color: #e3ebd3;
+}
+
+.custom-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 18px !important;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover, 
+.custom-navbar .nav-link.active {
+    color: #fff !important;
+    background-color: var(--sage-primary);
+}
+
+/* Hero Jumbotron Section with Vector Shapes */
+.hero-jumbotron {
+    background-image: linear-gradient(rgba(28, 38, 19, 0.55), rgba(28, 38, 19, 0.55)), 
+                     url('https://images.unsplash.com/photo-1517433456452-f9633a875f6f?w=1200');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 90vh;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.hero-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.shape-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(141, 84, 44, 0.2);
+    border-radius: 50%;
+    bottom: -50px;
+    right: -50px;
+    filter: blur(80px);
+}
+
+.shape-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(92, 111, 68, 0.3);
+    border-radius: 50%;
+    top: -50px;
+    left: 20%;
+    filter: blur(60px);
+}
+
+.z-index-2 {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-card {
+    background-color: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(10px);
+    max-width: 650px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25) !important;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bg-sage {
+    background-color: #e0ead7 !important;
+    letter-spacing: 1px;
+}
+
+/* Custom Buttons (Elegant & Choco) */
+.btn-choco {
+    background-color: var(--choco-primary);
+    border: 1px solid var(--choco-primary);
+    border-radius: 30px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-choco:hover {
+    background-color: var(--choco-dark);
+    border-color: var(--choco-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(141, 84, 44, 0.3) !important;
+}
+
+.btn-outline-sage-dark {
+    color: var(--sage-dark);
+    border: 2px solid var(--sage-primary);
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.btn-outline-sage-dark:hover {
+    background-color: var(--sage-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-sage {
+    color: var(--sage-primary);
+    border: 1.5px solid var(--sage-primary);
+    transition: all 0.3s;
+}
+
+.btn-outline-sage:hover {
+    background-color: var(--sage-primary);
+    color: white;
+}
+
+/* Borders & Dividers */
+.border-choco-accent {
+    border-left: 6px solid var(--choco-primary) !important;
+}
+
+.border-choco-thin {
+    border: 1px solid #efe4dc !important;
+}
+
+.border-bottom-sage {
+    border-bottom: 4px solid var(--sage-primary) !important;
+}
+
+.border-bottom-choco {
+    border-bottom: 4px solid var(--choco-primary) !important;
+}
+
+.divider {
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, var(--choco-primary), var(--sage-primary));
+    border-radius: 10px;
+}
+
+/* Cards & Hover Styles */
+.bg-card-light {
+    background-color: var(--sage-light);
+    border: 1px solid rgba(92, 111, 68, 0.08);
+}
+
+.icon-circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-sage-light {
+    background-color: #ebf2e7;
+}
+
+.text-sage {
+    color: var(--sage-primary);
+}
+
+.bg-choco-light {
+    background-color: var(--choco-light);
+}
+
+.text-choco {
+    color: var(--choco-primary);
+}
+
+.text-dark-green {
+    color: var(--dark-green);
+}
+
+.transition-hover {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.transition-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(28, 38, 19, 0.08) !important;
+}
+
+/* Custom Nav Pills for Menu Tabs */
+.custom-pill-btn {
+    color: var(--sage-dark) !important;
+    background-color: var(--sage-light) !important;
+    border-radius: 30px !important;
+    transition: all 0.3s;
+    border: 1.5px solid transparent !important;
+}
+
+.custom-pill-btn.active {
+    background-color: var(--sage-primary) !important;
+    color: white !important;
+    border-color: var(--sage-primary) !important;
+    box-shadow: 0 6px 15px rgba(92, 111, 68, 0.25) !important;
+}
+
+/* Product Card Styling */
+.product-card {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-color: white;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 36px rgba(28, 38, 19, 0.12) !important;
+}
+
+.img-zoom-container {
+    overflow: hidden;
+    height: 240px;
+}
+
+.img-zoom-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover .img-zoom-container img {
+    transform: scale(1.08);
+}
+
+.border-top-dashed {
+    border-top: 1px dashed #efe4dc;
+}
+
+/* Alerts & Maps */
+.custom-alert {
+    background-color: var(--sage-light);
+    border-left: 6px solid var(--sage-primary);
+    color: var(--dark-green);
+}
+
+/* Decorative Ornaments */
+.decorative-leaf {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(92, 111, 68, 0.05);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    top: -20px;
+    right: -20px;
+}
+
+.decorative-leaf-2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    bottom: -40px;
+    left: -40px;
+}
+
+/* Contact Social Buttons */
+.bg-dark-green {
+    background-color: var(--dark-green);
+}
+
+.btn-whatsapp-custom {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-whatsapp-custom:hover {
+    background-color: #128C7E;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-instagram-custom {
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.btn-instagram-custom:hover {
+    filter: brightness(1.15);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Custom Footer */
+.custom-footer {
+    background-color: var(--dark-green);
+    border-top: 3px solid var(--choco-primary);
+}
+
+.text-sage-muted {
+    color: #a3b899;
 }
