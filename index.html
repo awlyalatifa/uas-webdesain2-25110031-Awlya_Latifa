@@ -74,42 +74,47 @@
                     <div class="cute-divider mx-auto"></div>
                 </div>
                 
-                <div id="premiumCarousel" class="carousel slide carousel-fade custom-carousel mx-auto" data-bs-ride="carousel">
+                <!-- Update pada elemen carousel -->
+                 <div id="premiumCarousel" class="carousel slide carousel-fade custom-carousel mx-auto" data-bs-ride="carousel" data-bs-interval="3000">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#premiumCarousel" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#premiumCarousel" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#premiumCarousel" data-bs-slide-to="2"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <!-- Item Carousel tetap sama -->
+                         <div class="carousel-item active">
                             <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop" class="d-block w-100 carousel-img" alt="Croissant">
                             <div class="carousel-caption">
                                 <h5 class="fw-bold text-uppercase heading-font m-0">🥐 Butter Croissant</h5>
-                                <p class="mb-0 text-muted small">Lapisan pastry renyah bermentega premium Prancis yang lembut di dalam.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop" class="d-block w-100 carousel-img" alt="Strawberry Cake">
-                            <div class="carousel-caption">
-                                <h5 class="fw-bold text-uppercase heading-font m-0">🍓 Strawberry Signature Cake</h5>
-                                <p class="mb-0 text-muted small">Sponge cake premium berlapis krim segar dengan potongan strawberry manis asam segar.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800&auto=format&fit=crop" class="d-block w-100 carousel-img" alt="Roti Manis">
-                            <div class="carousel-caption">
-                                <h5 class="fw-bold text-uppercase heading-font m-0">🍞 Roti Spesial Srikaya</h5>
-                                <p class="mb-0 text-muted small">Tekstur roti super empuk dipadukan dengan selai srikaya racikan rahasia dapur kami.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#premiumCarousel" data-bs-slide-prev>
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#premiumCarousel" data-bs-slide-next>
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
+                <p class="mb-0 text-muted small">Lapisan pastry renyah bermentega premium Prancis yang lembut di dalam.</p>
+            </div>
+        </div>
+        <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=600&auto=format&fit=crop" class="d-block w-100 carousel-img" alt="Croissant">
+            <div class="carousel-caption">
+                <h5 class="fw-bold text-uppercase heading-font m-0">🥐 Butter Croissant</h5>
+                <p class="mb-0 text-muted small">Lapisan pastry renyah bermentega premium Prancis yang lembut di dalam.</p>
+            </div>
+        </div>
+        <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop" class="d-block w-100 carousel-img" alt="Croissant">
+            <div class="carousel-caption">
+                <h5 class="fw-bold text-uppercase heading-font m-0">🥐 Butter Croissant</h5>
+                <p class="mb-0 text-muted small">Lapisan pastry renyah bermentega premium Prancis yang lembut di dalam.</p>
+            </div>
+        </div>
+       
+    </div>
+    
+    <!-- Perbaikan pada tombol navigasi (data-bs-slide diperbaiki) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#premiumCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#premiumCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
             </div>
 
             <!-- KEUNGGULAN -->
@@ -176,11 +181,11 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card card-product h-100 position-relative">
                                     <div class="product-badge position-absolute">POPULAR VARIANT</div>
-                                    <div class="img-container"><img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Roti Cokelat"></div>
+                                    <div class="img-container"><img src="chocobun.jpeg" class="card-img-top" alt="Roti Cokelat"></div>
                                     <div class="card-body p-4 d-flex flex-column justify-content-between">
                                         <div>
-                                            <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Roti Cokelat Klasik</h5>
-                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Alergen: Tepung, Susu, Telur">Isian cokelat pasta premium melimpah berselimut roti lembut bertabur meses manis.</p>
+                                            <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Choco Bun</h5>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Alergen: Tepung, Susu, Telur">Isian cokelat pasta premium melimpah berselimut roti lembut bertabur choco powder.</p>
                                         </div>
                                         <div class="mt-3 pt-2 border-top-dashed">
                                             <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 9.000 <span class="text-muted fw-normal small">/ pcs</span></div>
@@ -194,27 +199,81 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="card card-product h-100 position-relative">
-                                    <div class="product-badge position-absolute">LOCAL FAVORITE</div>
-                                    <div class="img-container"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Roti Srikaya"></div>
+                                    <div class="product-badge position-absolute">KIDS CHOICE</div>
+                                    <div class="img-container"><img src="donat.jpg" class="card-img-top" alt="Donat"></div>
                                     <div class="card-body p-4 d-flex flex-column justify-content-between">
                                         <div>
-                                            <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Roti Spesial Srikaya</h5>
-                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Srikaya Alami">Tekstur roti super empuk dipadukan dengan selai srikaya racikan rahasia dapur kami.</p>
+                                            <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Donat</h5>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Srikaya Alami">Tekstur donat super empuk dipadukan dengan toping racikan rahasia dapur kami.</p>
                                         </div>
                                         <div class="mt-3 pt-2 border-top-dashed">
-                                            <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 10.000 <span class="text-muted fw-normal small">/ pcs</span></div>
-                                            <button class="btn btn-sm btn-outline-cute w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalDetail" data-name="Roti Spesial Srikaya" data-desc="Dibuat dari ekstrak daun pandan asli and santan kelapa segar yang dimasak perlahan hingga menghasilkan selai srikaya yang legit dan wangi di dalam roti super lembut.">
+                                            <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 5.000 <span class="text-muted fw-normal small">/ pcs</span></div>
+                                            <button class="btn btn-sm btn-outline-cute w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalDetail" data-name="Donat" data-desc="Dibuat dari ekstrak daun pandan asli and santan kelapa segar yang dimasak perlahan hingga menghasilkan selai srikaya yang legit dan wangi di dalam roti super lembut.">
                                                 DETAIL PRODUK
                                             </button>
-                                            <button class="btn btn-pink-cute btn-sm w-100 fw-bold btn-order-notif" data-name="Roti Spesial Srikaya">PESAN VIA WHATSAPP</button>
+                                            <button class="btn btn-pink-cute btn-sm w-100 fw-bold btn-order-notif" data-name="Donar">PESAN VIA WHATSAPP</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="card card-product h-100 position-relative">
-                                    <div class="product-badge position-absolute">KIDS CHOICE</div>
-                                    <div class="img-container"><img src="https://images.unsplash.com/photo-1558961317-194342a786ef?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Roti Susu Keju"></div>
+                                    <div class="product-badge position-absolute">LOCAL FAVORITE</div>
+                                    <div class="img-container"><img src="sweetloaf.jpg" class="card-img-top" alt="Butter bread"></div>
+                                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Butter Sweet Bread</h5>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Gandum Pilihan">Manisnya pas, menteganya gurih! teman sempurna untuk kopi pagi Anda</p>
+                                        </div>
+                                        <div class="mt-3 pt-2 border-top-dashed">
+                                            <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 15.000 <span class="text-muted fw-normal small">/ pcs</span></div>
+                                            <button class="btn btn-sm btn-outline-cute w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalDetail" data-name="Donat" data-desc="Dibuat dari ekstrak daun pandan asli and santan kelapa segar yang dimasak perlahan hingga menghasilkan selai srikaya yang legit dan wangi di dalam roti super lembut.">
+                                                DETAIL PRODUK
+                                            </button>
+                                            <button class="btn btn-pink-cute btn-sm w-100 fw-bold btn-order-notif" data-name="Donar">PESAN VIA WHATSAPP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card card-product h-100 position-relative">
+                                    <div class="img-container"><img src="muffin.png" class="card-img-top" alt="Muffin"></div>
+                                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Blueberry Muffin</h5>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Blueberry Alami">Manisnya pas, blueberry-nya melimpah! Kelembutan tiada tanding dalam satu gigitan sempurna.</p>
+                                        </div>
+                                        <div class="mt-3 pt-2 border-top-dashed">
+                                            <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 5.000 <span class="text-muted fw-normal small">/ pcs</span></div>
+                                            <button class="btn btn-sm btn-outline-cute w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalDetail" data-name="Donat" data-desc="Dibuat dari ekstrak daun pandan asli and santan kelapa segar yang dimasak perlahan hingga menghasilkan selai srikaya yang legit dan wangi di dalam roti super lembut.">
+                                                DETAIL PRODUK
+                                            </button>
+                                            <button class="btn btn-pink-cute btn-sm w-100 fw-bold btn-order-notif" data-name="Donar">PESAN VIA WHATSAPP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card card-product h-100 position-relative">
+                                    <div class="img-container"><img src="coffebun.jpg" class="card-img-top" alt="coffe bun"></div>
+                                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Coffe Bun</h5>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Cream Coffe">Aroma kopi menggugah, kelembutan yang tak terlupakan.</p>
+                                        </div>
+                                        <div class="mt-3 pt-2 border-top-dashed">
+                                            <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 10.000 <span class="text-muted fw-normal small">/ pcs</span></div>
+                                            <button class="btn btn-sm btn-outline-cute w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalDetail" data-name="Donat" data-desc="Dibuat dari ekstrak daun pandan asli and santan kelapa segar yang dimasak perlahan hingga menghasilkan selai srikaya yang legit dan wangi di dalam roti super lembut.">
+                                                DETAIL PRODUK
+                                            </button>
+                                            <button class="btn btn-pink-cute btn-sm w-100 fw-bold btn-order-notif" data-name="Donar">PESAN VIA WHATSAPP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card card-product h-100 position-relative">
+                                    <div class="img-container"><img src="milkbun.jpg" class="card-img-top" alt="Roti Susu Keju"></div>
                                     <div class="card-body p-4 d-flex flex-column justify-content-between">
                                         <div>
                                             <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Milky Cheese Bun</h5>
@@ -243,7 +302,7 @@
                                     <div class="card-body p-4 d-flex flex-column justify-content-between">
                                         <div>
                                             <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Signature Black Forest</h5>
-                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Dark Chocolate & Fresh Cherry 🍒">Kue ulang tahun klasik dengan lapisan serutan cokelat pekat berpadu buah ceri segar.</p>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Dark Chocolate & Fresh Cherry 🍒">Kelembutan cokelat hitam klasik yang siap menjadikan setiap momenmu terasa lebih istimewa.</p>
                                         </div>
                                         <div class="mt-3 pt-2 border-top-dashed">
                                             <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 180.000 <span class="text-muted fw-normal small">/ loyang</span></div>
@@ -258,11 +317,11 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card card-product h-100 position-relative">
                                     <div class="product-badge position-absolute">BEST SELLER</div>
-                                    <div class="img-container"><img src="https://images.unsplash.com/photo-1535141192574-5d4897c13636?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Strawberry Cake"></div>
+                                    <div class="img-container"><img src="strawberry.jpg" class="card-img-top" alt="Strawberry Cake"></div>
                                     <div class="card-body p-4 d-flex flex-column justify-content-between">
                                         <div>
                                             <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Strawberry Fresh Cake</h5>
-                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Karakter: Light & Refreshing">Sponge cake premium berlapis krim segar dengan potongan strawberry manis asam segar.</p>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Karakter: Light & Refreshing">Perpaduan sempurna sponge cake selembut awan dan potongan stroberi segar yang bikin nagih.</p>
                                         </div>
                                         <div class="mt-3 pt-2 border-top-dashed">
                                             <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 195.000 <span class="text-muted fw-normal small">/ loyang</span></div>
@@ -277,11 +336,65 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card card-product h-100 position-relative">
                                     <div class="product-badge position-absolute">PREMIUM CHEESE</div>
-                                    <div class="img-container"><img src="https://images.unsplash.com/photo-1607349913338-fca6f7fc42d0?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Tiramisu Cake"></div>
+                                    <div class="img-container"><img src="tiramisu.jpg" class="card-img-top" alt="Tiramisu Cake"></div>
                                     <div class="card-body p-4 d-flex flex-column justify-content-between">
                                         <div>
                                             <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Elegant Tiramisu Cake</h5>
-                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Mascarpone Cheese & Espresso">Kombinasi keju lembut mascarpone dengan sentuhan ladyfinger beraroma kopi espresso.</p>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Mascarpone Cheese & Espresso">Cita rasa autentik tiramisu Italia: lembut, berkelas, dan pas untuk memanjakan harimu.</p>
+                                        </div>
+                                        <div class="mt-3 pt-2 border-top-dashed">
+                                            <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 210.000 <span class="text-muted fw-normal small">/ loyang</span></div>
+                                            <button class="btn btn-sm btn-outline-cute w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalDetail" data-name="Elegant Tiramisu Cake" data-desc="Kue bercita rasa Italia otentik dengan balutan bubuk cokelat murni berkualitas tinggi, krim mascarpone yang creamy, dan rendaman kopi arabika pekat.">
+                                                DETAIL PRODUK
+                                            </button>
+                                            <button class="btn btn-pink-cute btn-sm w-100 fw-bold btn-order-notif" data-name="Elegant Tiramisu Cake">PESAN VIA WHATSAPP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card card-product h-100 position-relative">
+                                    <div class="img-container"><img src="almond.jpg" class="card-img-top" alt="Tiramisu Cake"></div>
+                                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Almond Cake</h5>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Mascarpone Cheese & Espresso">Kelembutan cake berbahan pilihan dengan gurih renyahnya taburan almond panggang melimpah</p>
+                                        </div>
+                                        <div class="mt-3 pt-2 border-top-dashed">
+                                            <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 210.000 <span class="text-muted fw-normal small">/ loyang</span></div>
+                                            <button class="btn btn-sm btn-outline-cute w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalDetail" data-name="Elegant Tiramisu Cake" data-desc="Kue bercita rasa Italia otentik dengan balutan bubuk cokelat murni berkualitas tinggi, krim mascarpone yang creamy, dan rendaman kopi arabika pekat.">
+                                                DETAIL PRODUK
+                                            </button>
+                                            <button class="btn btn-pink-cute btn-sm w-100 fw-bold btn-order-notif" data-name="Elegant Tiramisu Cake">PESAN VIA WHATSAPP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card card-product h-100 position-relative">
+                                    <div class="img-container"><img src="fruittart.jpg" class="card-img-top" alt="Tiramisu Cake"></div>
+                                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Fruit Tart Cake</h5>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Mascarpone Cheese & Espresso">Ledakan kesegaran buah asli di atas crust gurih beraroma butter, bikin mood langsung naik!.</p>
+                                        </div>
+                                        <div class="mt-3 pt-2 border-top-dashed">
+                                            <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 210.000 <span class="text-muted fw-normal small">/ loyang</span></div>
+                                            <button class="btn btn-sm btn-outline-cute w-100 mb-2" data-bs-toggle="modal" data-bs-target="#modalDetail" data-name="Elegant Tiramisu Cake" data-desc="Kue bercita rasa Italia otentik dengan balutan bubuk cokelat murni berkualitas tinggi, krim mascarpone yang creamy, dan rendaman kopi arabika pekat.">
+                                                DETAIL PRODUK
+                                            </button>
+                                            <button class="btn btn-pink-cute btn-sm w-100 fw-bold btn-order-notif" data-name="Elegant Tiramisu Cake">PESAN VIA WHATSAPP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card card-product h-100 position-relative">
+                                    <div class="img-container"><img src="red.jpg" class="card-img-top" alt="Tiramisu Cake"></div>
+                                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Redvelvet cake</h5>
+                                            <p class="card-text text-muted small" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahan Utama: Mascarpone Cheese & Espresso">Klasik, anggun, dan kaya rasa—pilihan terbaik untuk merayakan setiap detik berhargamu.</p>
                                         </div>
                                         <div class="mt-3 pt-2 border-top-dashed">
                                             <div class="price-tag mb-3 fw-bold fs-5" style="color: var(--bakery-green);">Rp 210.000 <span class="text-muted fw-normal small">/ loyang</span></div>
@@ -302,7 +415,7 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card card-product h-100 position-relative">
                                     <div class="product-badge position-absolute">BOULANGERIE</div>
-                                    <div class="img-container"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Almond Croissant"></div>
+                                    <div class="img-container"><img src="croissant.jpg" class="card-img-top" alt="Almond Croissant"></div>
                                     <div class="card-body p-4 d-flex flex-column justify-content-between">
                                         <div>
                                             <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Almond Croissant</h5>
@@ -321,7 +434,7 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card card-product h-100 position-relative">
                                     <div class="product-badge position-absolute">CHEF RECOMMENDATION</div>
-                                    <div class="img-container"><img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Pain Au Chocolat"></div>
+                                    <div class="img-container"><img src="pain.jpg" class="card-img-top" alt="Pain Au Chocolat"></div>
                                     <div class="card-body p-4 d-flex flex-column justify-content-between">
                                         <div>
                                             <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Pain Au Chocolat</h5>
@@ -340,7 +453,7 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="card card-product h-100 position-relative">
                                     <div class="product-badge position-absolute">SAVOURY CHOICE</div>
-                                    <div class="img-container"><img src="https://images.unsplash.com/photo-1626803775151-61d756612f9a?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Smoked Beef Pastry"></div>
+                                    <div class="img-container"><img src="chessepuff.jpg" class="card-img-top" alt="Smoked Beef Pastry"></div>
                                     <div class="card-body p-4 d-flex flex-column justify-content-between">
                                         <div>
                                             <h5 class="card-title fw-bold heading-font text-uppercase fs-5">Smoked Beef & Cheese Puff</h5>
